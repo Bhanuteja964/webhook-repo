@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Webhook Events</title>
+    <meta http-equiv="refresh" content="15">
+</head>
+<body>
+    <h2>Recent GitHub Events</h2>
+    <ul>
+        {% for event in events %}
+            <li>{{ event['message'] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
